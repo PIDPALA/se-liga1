@@ -1,0 +1,56 @@
+:root {
+    --cinza:#f50606;
+    --vvermelha:#ed516b;
+    --vermelha-escura:#db5968;
+    --branca:#a6;
+    --luz0:rgb(229, 255.0);
+}
+body {
+    align-items: center;
+    background: -moz-linear-gradient(45dg,#a7cfdf 0%,#23538a 100%);
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'montserrat',sans-seriff;
+    min-height: 100vh;
+}
+h1 {
+    color:var(--branca); 
+    margin-bottom: 20px;
+    font-size: : 2rem
+
+}
+
+.tecla {
+    background-color: var(--branca);
+    border-radius: 30px;
+    box-shadow: 3px 3px 0 var(--cinza);
+    color: var(--vermelha);
+    cursor: pointer;
+    height: 120px;
+    font-size: 1.75em;
+    font-weight: bold;
+    line-height: 120px;text-align: center;
+    width: 120px;
+}
+
+.tecla.ativa,
+.tela:active{
+
+background-color: var(--vermelha);
+border: 4px solid var(--vermelha);
+box-shadow: 3px px 0 var(--vermelha-escura)inset;
+color: var(--branca);
+outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px var(--luz0);
+}
+
+.tecla.active.focus,
+.tecla:active:focus {
+    box-shadow: 3px 3px 0 var(--vermelha-escura)inset, 1px 1px 10px var(--luz0); 
+}
